@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    long long a,b,c;
+    long long x1,x2,x3;
+    char d;
+    cin>>a>>d>>b>>d>>c;
+    x1=a*17*29+b*29+c;
+    cin>>a>>d>>b>>d>>c;
+    x2=a*17*29+b*29+c;
+    x3=x1+x2;
+    c=x3%29;
+    x3/=29;
+    b=x3%17;
+    x3/=17;
+    a=x3;
+    cout<<a<<'.'<<b<<'.'<<c;
+}
